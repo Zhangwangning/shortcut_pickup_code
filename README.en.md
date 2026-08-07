@@ -1,37 +1,59 @@
-# shortcut_pickup_code
+# Pickup Code · iOS Shortcut
 
-#### Description
-快递取件码快捷指令
-通过 iOS 快捷指令的自动化功能，自动匹配短信内容，提取其中的快递取件码和取件地址，并自动添加到系统提醒事项列表中。纯本地运行，无需第三方服务。
+> Automatically extract pickup codes, tracking numbers, and pickup addresses from SMS  
+> Runs locally · No third-party apps needed · Ad-free
 
-#### Software Architecture
-Software architecture description
+![QR Code](qrcode.jpeg)
 
-#### Installation
+## ✨ Features
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+- 📦 **Auto-extract key info**: Pickup code, tracking number, courier company, pickup location
+- 🔢 **Multi-code support**: Extract multiple codes from a single message (e.g., `Z-0102,F1-1818`)
+- 🚚 **30+ couriers supported**: SF Express, YTO, STO, ZTO, Yunda, EMS, JD, J&T, Cainiao, and more
+- ✅ **Smart deduplication + auto-check**: No duplicate records when sharing the same message twice
+- 🔔 **Pickup notification**: System notification when added to Reminders
+- 🔒 **Offline & private**: No network required, data stays on your device only
 
-#### Instructions
+## 📲 How to Get It
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+### Method 1: Scan QR Code (Recommended)
 
-#### Contribution
+Scan the QR code above with your iPhone camera to add the shortcut directly.
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+### Method 2: iCloud Link
 
+Click the link below to open in Safari:
 
-#### Gitee Feature
+```
+<!-- Add your iCloud share link here -->
+https://www.icloud.com/shortcuts/xxx
+```
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## 📖 Usage Guide
+
+### 1️⃣ First Run Authorization
+
+On first run, grant **Reminders** permission when prompted.
+
+### 2️⃣ Daily Use (3 Steps)
+
+1. Open the delivery SMS → Tap **Share**
+2. Select **「快递取件码」** from the share sheet
+3. Open **Reminders** App → Check "待取件📦" list → Mark ✓ when picked up
+
+You can also copy the SMS text and run the shortcut directly.
+
+### 3️⃣ Test Mode
+
+Set the 「测试」 variable to `True` to test with custom SMS text without waiting for real messages.
+
+## ⚙️ Customization
+
+| Setting | Default | Description |
+| --- | --- | --- |
+| List Name | 待取件📦 | Customize in dictionary |
+| Show Address | True | Set to `False` to hide address |
+
+## 📄 License
+
+Copyright © ZhangWangning. All rights reserved.
