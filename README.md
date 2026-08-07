@@ -86,14 +86,14 @@ https://gitee.com/zhang_wangning/shortcut_pickup_code/raw/master/pickup-code.sho
 
 ## 📋 版本历史
 
-详见 [CHANGELOG.md](CHANGELOG.md)，每个版本的二维码与安装文件见 [`releases/`](releases/) 目录。
+详见 [CHANGELOG.md](CHANGELOG.md)，各版本记录见 [`releases/`](releases/) 目录（V7.0.0 为当前发行版，含二维码与安装包；v6.4.x 为历史文档记录）。
 
-| 版本 | 发布日期 | 二维码 / 安装包 |
-| --- | --- | --- |
-| **V7.0.0** | 2026-08-03 | [releases/v7.0.0](releases/v7.0.0/) |
-| V6.4.2 | 2026-06-07 | [releases/v6.4.2](releases/v6.4.2/) |
-| V6.4.1 | 2026-06-05 | [releases/v6.4.1](releases/v6.4.1/) |
-| V6.4.0 | 2026-05-25 | [releases/v6.4.0](releases/v6.4.0/) |
+| 版本 | 发布日期 | 类型 | 记录 |
+| --- | --- | --- | --- |
+| **V7.0.0** | 2026-08-03 | 发行版 | [releases/v7.0.0](releases/v7.0.0/)（含二维码 + 安装包） |
+| V6.4.2 | 2026-06-07 | 历史记录 | [releases/v6.4.2](releases/v6.4.2/)（仅文档） |
+| V6.4.1 | 2026-06-05 | 历史记录 | [releases/v6.4.1](releases/v6.4.1/)（仅文档） |
+| V6.4.0 | 2026-05-25 | 历史记录 | [releases/v6.4.0](releases/v6.4.0/)（仅文档） |
 
 ## 🔄 在线更新
 
