@@ -25,8 +25,7 @@ Scan the QR code above with your iPhone camera to add the shortcut directly.
 Click the link below to open in Safari:
 
 ```
-<!-- Add your iCloud share link here -->
-https://www.icloud.com/shortcuts/xxx
+https://www.icloud.com/shortcuts/6a0354a4502c4c25a431238541af4969
 ```
 
 ## 📖 Usage Guide

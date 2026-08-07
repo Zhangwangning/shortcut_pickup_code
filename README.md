@@ -25,8 +25,7 @@
 点击下方链接，在 Safari 中打开即可添加：
 
 ```
-<!-- 请在此处填入你的 iCloud 共享链接 -->
-https://www.icloud.com/shortcuts/xxx
+https://www.icloud.com/shortcuts/6a0354a4502c4c25a431238541af4969
 ```
 
 > 💡 **提示**：打开链接后选择「获取快捷指令」，首次使用需在「设置 → 快捷指令」中允许运行。
