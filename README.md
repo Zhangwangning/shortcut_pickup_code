@@ -30,6 +30,14 @@ https://www.icloud.com/shortcuts/6a0354a4502c4c25a431238541af4969
 
 > 💡 **提示**：打开链接后选择「获取快捷指令」，首次使用需在「设置 → 快捷指令」中允许运行。
 
+### 方式三：仓库直接下载
+
+适合想本地保存 `.shortcut` 文件的用户（文件已改为 ASCII 命名，便于脚本化抓取）：
+
+```
+https://gitee.com/zhang_wangning/shortcut_pickup_code/raw/master/pickup-code.shortcut
+```
+
 ## 📖 使用方法
 
 > 完整配置步骤与工作原理，详见 [USAGE.md](USAGE.md)。
@@ -70,14 +78,28 @@ https://www.icloud.com/shortcuts/6a0354a4502c4c25a431238541af4969
 | 条件判断（一） | 66–76 | 按快递公司 / 格式分流 |
 | 条件判断（二） | 77–93 | 按是否已记录分流 |
 
-**三套正则协作**：
-- 取件码正则：支持连字符、字母混合、纯数字，排除手机号
+**五套正则协作（全部由 config 字典的「正则表达式」子字典驱动）**：
+- 快递平台正则：识别 30+ 家快递 / 驿站 / 智能柜（含 SF、STO、ZTO、EMS、J&T 等英文标识）
+- 取件码正则：支持连字符、字母混合、纯数字，并排除 11 位手机号误识别
 - 运单号正则：识别 `SF`/`JD` 等长单号格式
-- 地址正则：精确匹配驿站 / 快递柜 / 代收点
+- 取件地址正则（地址1 / 地址2）：精确匹配驿站 / 快递柜 / 代收点
 
 ## 📋 版本历史
 
 详见 [CHANGELOG.md](CHANGELOG.md)
+
+## 🔄 在线更新
+
+本仓库通过根目录的 [`version.json`](version.json) 提供**机器可读的版本信息**，快捷指令可主动拉取并比对，实现在线更新提示（无需手动关注推送）。
+
+- **版本信息源（raw 直链，供快捷指令「获取 URL 内容」调用）**：
+  ```
+  https://gitee.com/zhang_wangning/shortcut_pickup_code/raw/master/version.json
+  ```
+- **比对机制**：快捷指令自身保存一个 `versionCode`（当前 V7.0.0 = `700`）；拉取上述 JSON 后比较 `current.versionCode`，若数值更大即提示有新版本，并展示 `current.changelog` 更新要点。
+- **新版入口**：JSON 中的 `current.icloudUrl` 与 `current.shortcutRawUrl` 即最新版获取地址。
+
+> 📌 **发版约定**：每次更新快捷指令，只需同步更新 `version.json` 的 `current` 字段（版本号 / versionCode / releaseDate / changelog）并提交仓库，即自动成为可信的版本信息源——这也是本仓库存在的核心目的之一。
 
 ## 🤝 反馈与支持
 
