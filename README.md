@@ -47,6 +47,16 @@ https://www.icloud.com/shortcuts/527837f174134f6680cc528f85f98bc6
 https://gitee.com/zhang_wangning/shortcut_pickup_code/raw/master/pickup-code.shortcut
 ```
 
+### 📜 历史版本获取方式（V7.1.0 之前）
+
+在 **V7.1.0 之前**，快捷指令通过**微信公众号关键词自动回复**分发，具体步骤：
+
+1. 打开微信，搜索并关注公众号「**极客 ZHANG**」；
+2. 在公众号对话框中**回复关键词 `0525`**；
+3. 公众号会自动下发对应版本快捷指令的获取链接，按提示添加即可。
+
+> 此方式适用于 **V7.0.0 及更早（v6.4.x）版本**。自 V7.1.0 起改为上方的扫码 / iCloud / 仓库下载方式；如需历史版本，仍可在微信公众号「极客 ZHANG」回复 `0525` 联系作者获取。
+
 ## 📖 使用方法
 
 > 完整配置步骤与工作原理，详见 [USAGE.md](USAGE.md)。
@@ -106,6 +116,8 @@ https://gitee.com/zhang_wangning/shortcut_pickup_code/raw/master/pickup-code.sho
 | V6.4.1 | 2026-06-05 | 历史记录 | [releases/v6.4.1](releases/v6.4.1/)（仅文档） |
 | V6.4.0 | 2026-05-25 | 历史记录 | [releases/v6.4.0](releases/v6.4.0/)（仅文档） |
 
+> 📜 **历史版本获取方式**：V7.1.0 之前的版本（V7.0.0 及 v6.4.x）通过微信公众号「极客 ZHANG」回复关键词 `0525` 获取，详见上方「获取方式」章节。
+
 ## 🔄 在线更新
 
 本仓库通过根目录的 [`version.json`](version.json) 提供**机器可读的版本信息**，快捷指令可主动拉取并比对，实现在线更新提示（无需手动关注推送）。
@@ -129,7 +141,7 @@ https://gitee.com/zhang_wangning/shortcut_pickup_code/raw/master/pickup-code.sho
 
 | 渠道 | 说明 |
 | --- | --- |
-| **微信公众号** | 「**极客 ZHANG**」— 探索科技 · 记录生活 · 传递灵感 |
+| **微信公众号** | 「**极客 ZHANG**」— 探索科技 · 记录生活 · 传递灵感（回复 `0525` 可获取历史版本快捷指令） |
 | **小红书** | 「**极客 ZHANG**」（zwn1652503532）— 扫码或搜索用户名即可找到 |
 
 ![微信公众号名片](assets/wechat-card.png)
