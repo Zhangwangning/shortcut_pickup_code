@@ -25,7 +25,7 @@
 点击下方链接，在 Safari 中打开即可添加：
 
 ```
-https://www.icloud.com/shortcuts/6a0354a4502c4c25a431238541af4969
+https://www.icloud.com/shortcuts/527837f174134f6680cc528f85f98bc6
 ```
 
 > 💡 **提示**：打开链接后选择「获取快捷指令」，首次使用需在「设置 → 快捷指令」中允许运行。
@@ -67,18 +67,19 @@ https://gitee.com/zhang_wangning/shortcut_pickup_code/raw/master/pickup-code.sho
 
 ## 🔧 技术原理
 
-整个指令由 **93 个动作**组成，分为 6 个阶段：
+整个指令由 **115 个动作**组成，分为 7 个阶段：
 
 | 阶段 | 动作范围 | 作用 |
 | --- | --- | --- |
-| 配置与字典管理 | 1–16 | 初始化参数，自动创建提醒列表 |
-| 写入提醒事项 | 17–28 | 把结果固化成可追踪的记录 |
-| 循环处理 | 29–44 | 批量处理多条 / 多个匹配项 |
-| 提取关键信息 | 45–65 | 用正则抓取取件码、运单号、站点 |
-| 条件判断（一） | 66–76 | 按快递公司 / 格式分流 |
-| 条件判断（二） | 77–93 | 按是否已记录分流 |
+| 在线更新检查 | 1–22 | 拉取仓库 version.json，比对版本号，有更新时展示 changelog |
+| 配置与字典管理 | 23–38 | 初始化参数，自动创建提醒列表 |
+| 写入提醒事项 | 39–50 | 把结果固化成可追踪的记录 |
+| 循环处理 | 51–66 | 批量处理多条 / 多个匹配项 |
+| 提取关键信息 | 67–87 | 用正则抓取取件码、运单号、站点 |
+| 条件判断（一） | 88–98 | 按快递公司 / 格式分流 |
+| 条件判断（二） | 99–115 | 按是否已记录分流 |
 
-**五套正则协作（全部由 config 字典的「正则表达式」子字典驱动）**：
+**五套正则协作（全部由 config 字典的「配置」子字典驱动）**：
 - 快递平台正则：识别 30+ 家快递 / 驿站 / 智能柜（含 SF、STO、ZTO、EMS、J&T 等英文标识）
 - 取件码正则：支持连字符、字母混合、纯数字，并排除 11 位手机号误识别
 - 运单号正则：识别 `SF`/`JD` 等长单号格式
@@ -86,11 +87,12 @@ https://gitee.com/zhang_wangning/shortcut_pickup_code/raw/master/pickup-code.sho
 
 ## 📋 版本历史
 
-详见 [CHANGELOG.md](CHANGELOG.md)，各版本记录见 [`releases/`](releases/) 目录（V7.0.0 为当前发行版，含二维码与安装包；v6.4.x 为历史文档记录）。
+详见 [CHANGELOG.md](CHANGELOG.md)，各版本记录见 [`releases/`](releases/) 目录（V7.1.0 为当前发行版，含二维码与安装包；V7.0.0 及 v6.4.x 为历史记录）。
 
 | 版本 | 发布日期 | 类型 | 记录 |
 | --- | --- | --- | --- |
-| **V7.0.0** | 2026-08-03 | 发行版 | [releases/v7.0.0](releases/v7.0.0/)（含二维码 + 安装包） |
+| **V7.1.0** | 2026-08-08 | 发行版 | [releases/v7.1.0](releases/v7.1.0/)（含二维码 + 安装包） |
+| V7.0.0 | 2026-08-03 | 历史记录 | [releases/v7.0.0](releases/v7.0.0/)（含二维码 + 安装包） |
 | V6.4.2 | 2026-06-07 | 历史记录 | [releases/v6.4.2](releases/v6.4.2/)（仅文档） |
 | V6.4.1 | 2026-06-05 | 历史记录 | [releases/v6.4.1](releases/v6.4.1/)（仅文档） |
 | V6.4.0 | 2026-05-25 | 历史记录 | [releases/v6.4.0](releases/v6.4.0/)（仅文档） |
@@ -103,7 +105,7 @@ https://gitee.com/zhang_wangning/shortcut_pickup_code/raw/master/pickup-code.sho
   ```
   https://gitee.com/zhang_wangning/shortcut_pickup_code/raw/master/version.json
   ```
-- **比对机制**：快捷指令自身保存一个 `versionCode`（当前 V7.0.0 = `700`）；拉取上述 JSON 后比较 `current.versionCode`，若数值更大即提示有新版本，并展示 `current.changelog` 更新要点。
+- **比对机制**：快捷指令自身保存一个 `versionCode`（当前 V7.1.0 = `710`）；拉取上述 JSON 后比较 `current.versionCode`，若数值更大即提示有新版本，并展示 `current.changelog` 更新要点。
 - **新版入口**：JSON 中的 `current.icloudUrl` 与 `current.shortcutRawUrl` 即最新版获取地址。
 
 > 📌 **发版约定**：每次更新快捷指令，只需同步更新 `version.json` 的 `current` 字段（版本号 / versionCode / releaseDate / changelog）并提交仓库，即自动成为可信的版本信息源——这也是本仓库存在的核心目的之一。

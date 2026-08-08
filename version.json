@@ -1,22 +1,33 @@
 {
   "name": "快递取件码",
   "current": {
-    "version": "7.0.0",
-    "versionCode": 700,
-    "releaseDate": "2026-08-03",
-    "icloudUrl": "https://www.icloud.com/shortcuts/6a0354a4502c4c25a431238541af4969",
+    "version": "7.1.0",
+    "versionCode": 710,
+    "releaseDate": "2026-08-08",
+    "icloudUrl": "https://www.icloud.com/shortcuts/527837f174134f6680cc528f85f98bc6",
     "shortcutRawUrl": "https://gitee.com/zhang_wangning/shortcut_pickup_code/raw/master/pickup-code.shortcut",
     "changelog": [
-      "正则架构重构：取件码 / 运单号 / 取件地址 / 快递平台 正则统一收进 config 字典的「正则表达式」子字典，集中维护，改一处即可",
-      "新增「快递平台」识别正则，覆盖 30+ 家快递 / 驿站 / 智能柜（含 SF、STO、ZTO、EMS、J&T 等英文标识）",
-      "取件码正则增强：触发前缀更丰富（尾号 / 用 / 提货验证），格式支持更全（长横、字母混合、长数字）",
-      "运单号正则增强：新增「快递 / 速递】」前缀，支持长单号",
-      "取件地址增强并拆为地址1 / 地址2 两套，兼容更多驿站与代收点格式",
-      "列表创建升级为专用 Reminders 意图，首次自动建「待取件📦」更可靠",
-      "去重与通知增强：查重 1→2、通知 2→3，并新增弹窗提醒"
+      "新增在线更新检查：启动时拉取仓库 version.json，比对 versionCode 检测新版本并展示 changelog",
+      "正则字典迁移：五套正则从「正则表达式」子字典迁至「配置」子字典，内容不变",
+      "动作规模增长：93 → 115 个动作（+22），主要来自在线更新模块"
     ]
   },
   "history": [
+    {
+      "version": "7.0.0",
+      "versionCode": 700,
+      "releaseDate": "2026-08-03",
+      "icloudUrl": "https://www.icloud.com/shortcuts/6a0354a4502c4c25a431238541af4969",
+      "changelog": [
+        "正则架构重构：取件码 / 运单号 / 取件地址 / 快递平台 正则统一收进 config 字典的「正则表达式」子字典，集中维护",
+        "新增「快递平台」识别正则，覆盖 30+ 家快递 / 驿站 / 智能柜",
+        "取件码正则增强：触发前缀更丰富，格式支持更全",
+        "运单号正则增强：新增前缀，支持长单号",
+        "取件地址增强并拆为地址1 / 地址2 两套",
+        "列表创建升级为专用 Reminders 意图",
+        "去重与通知增强：查重 1→2、通知 2→3，新增弹窗提醒"
+      ]
+    },
     {
       "version": "6.4.2",
       "versionCode": 642,
