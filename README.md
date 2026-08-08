@@ -123,6 +123,20 @@ https://gitee.com/zhang_wangning/shortcut_pickup_code/raw/master/pickup-code.sho
 
 - 使用中遇到问题？欢迎提交 [Issue](https://gitee.com/zhang_wangning/shortcut_pickup_code/issues)
 - 有功能建议？欢迎讨论或提交 PR
+- **快递无法识别**？将原始短信发送至以下任一渠道，作者会着手适配：
+
+### 📱 联系作者
+
+| 渠道 | 说明 |
+| --- | --- |
+| **微信公众号** | 「**极客 ZHANG**」— 探索科技 · 记录生活 · 传递灵感 |
+| **小红书** | 「**极客 ZHANG**」（zwn1652503532）— 扫码或搜索用户名即可找到 |
+
+![微信公众号名片](assets/wechat-card.png)
+
+![小红书个人名片](assets/xiaohongshu-card.jpg)
+
+> 💬 通过公众号或小红书私信反馈时，请附上**原始短信内容**（可打码手机号等隐私信息），以便精准定位正则匹配问题。
 
 ## 📄 许可证
 
