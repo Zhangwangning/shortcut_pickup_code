@@ -121,6 +121,7 @@ https://gitee.com/zhang_wangning/shortcut_pickup_code/raw/master/pickup-code.sho
 | 版本 | 发布日期 | 类型 | 资料 |
 | --- | --- | --- | --- |
 | **V7.1.3** | 2026-08-12 | **当前发行版** | [releases/v7.1.3](releases/v7.1.3/)（二维码 + 安装包） |
+| V7.2.0 | 2026-08-15 | 内测（历史归档） | [releases/v7.2.0](releases/v7.2.0/)（字典截图 + 说明 + 公式实测） |
 | V7.1.0 | 2026-08-08 | 历史归档 | [releases/v7.1.0](releases/v7.1.0/)（二维码 + 说明） |
 | V6.4 | 2025-06-09 | 历史归档 | [releases/V6.4](releases/V6.4/)（16 张教程攻略截图） |
 | V5.0 | 2025-03-27 | 历史归档 | [releases/V5.0](releases/V5.0/)（6 张） |
