@@ -104,11 +104,4 @@
 
 ---
 
-[//]: # (版本链接)
-
-[V7.1.3]: https://gitee.com/zhang_wangning/shortcut_pickup_code/tree/V7.1.3
-[V7.1.0]: https://gitee.com/zhang_wangning/shortcut_pickup_code/tree/V7.1.0
-[V7.0.0]: https://gitee.com/zhang_wangning/shortcut_pickup_code/tree/V7.0.0
-[V6.4.2]: https://gitee.com/zhang_wangning/shortcut_pickup_code/tree/V6.4.2
-[V6.4.1]: https://gitee.com/zhang_wangning/shortcut_pickup_code/tree/V6.4.1
-[V6.4.0]: https://gitee.com/zhang_wangning/shortcut_pickup_code/tree/V6.4.0
+[//]: # (历史版本归档见 releases/ 目录；本仓库未为旧版本单独建立 git tag，故此处不再保留 tree/ 链接)
