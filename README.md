@@ -34,7 +34,7 @@
 点击下方链接，在 Safari 中打开即可添加：
 
 ```
-https://www.icloud.com/shortcuts/9227bb617ac449b0bfc7b3620d6ac402
+https://www.icloud.com/shortcuts/b687a0f5b92c4f4fa30efa0fec362678
 ```
 
 > 💡 **提示**：打开链接后选择「获取快捷指令」，首次使用需在「设置 → 快捷指令」中允许运行。
