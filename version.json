@@ -4,7 +4,7 @@
     "version": "7.2.1",
     "versionCode": 721,
     "releaseDate": "2026-08-15",
-    "icloudUrl": "https://www.icloud.com/shortcuts/b687a0f5b92c4f4fa30efa0fec362678",
+    "icloudUrl": "https://www.icloud.com/shortcuts/9117725808a8489589f2cb04cab68979",
     "shortcutRawUrl": "https://gitee.com/zhang_wangning/shortcut_pickup_code/raw/master/pickup-code.shortcut",
     "changelog": [
       "取件地址公式合并重构：原「地址1/地址2」两套合并为单条优化公式，修复真实短信地址越界 bug（到(?!达) + 码防御）",
