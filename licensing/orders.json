@@ -1,11 +1,5 @@
 {
   "schemaVersion": 1,
-  "product": "快递取件码",
-  "productVersion": "V7.3.0",
-  "purchaseChannel": "小红书 · 极客ZHANG",
-  "matchMode": "exact",
-  "suffixLength": 0,
   "updatedAt": "2026-09-20",
-  "count": 0,
   "orders": []
 }
