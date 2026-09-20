@@ -3,13 +3,10 @@
 **发布日期**：2026-08-12
 **版本号**：7.1.3（versionCode: 713）
 **动作数**：150
-**iCloud 链接**：https://www.icloud.com/shortcuts/638eb12c752d4c38bd9c6d3885898bb1
 
-## 获取方式
+## 获取方式（已停止分发）
 
-1. **扫码获取**：使用相机扫描本目录下的 `qrcode.jpeg`，即可直接安装
-2. **iCloud 链接**：[点击安装](https://www.icloud.com/shortcuts/638eb12c752d4c38bd9c6d3885898bb1)
-3. **仓库下载**：[pickup-code.shortcut](https://gitee.com/zhang_wangning/shortcut_pickup_code/raw/master/pickup-code.shortcut)
+> 本版本自 **2026-09-20** 起停止分发，仓库已移除二维码与 iCloud 链接，不再提供安装入口；本目录仅作历史记录。
 
 ## 更新内容
 
