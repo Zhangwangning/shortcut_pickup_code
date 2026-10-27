@@ -1,22 +1,33 @@
 {
   "name": "快递取件码",
   "current": {
-    "version": "8.0.2",
-    "versionCode": 802,
+    "version": "8.0.3",
+    "versionCode": 803,
     "releaseDate": "2026-10-27",
     "minOS": "27.0",
     "icloudUrl": "https://xhslink.cn/o/31PowNflcif",
-    "shortcutRawUrl": "https://gitee.com/zhang_wangning/shortcut_pickup_code/blob/master/releases/v8.0.2/update-notes.md",
+    "shortcutRawUrl": "https://gitee.com/zhang_wangning/shortcut_pickup_code/blob/master/releases/v8.0.3/update-notes.md",
     "changelog": [
-      "修复配置转义污染：V8.0.1 安装包内公式为双反斜杠，导致凭证一条都抓不到，本版已恢复",
-      "修复凭证混入尾号：拆为主层（取件码+特殊格式）/ 备用层（运单号+尾号），主层命中即止",
-      "地址去外层括号：整段被括号包裹时自动剥壳，括号在中间的不受影响",
-      "移除地址导航（测试）功能：移除开关与写入提醒事项 URL 的整段逻辑",
-      "实测 103 条真实短信凭证识别 101 条，6 条多码短信全部为真多码"
+      "补「冒号+引号」取件码锚点，修「取件码：「A-9182」」抓不到",
+      "地址在「（请前往」处断开，不再残留半截括号",
+      "单字地址（店/期）直接清空，不写入提醒事项",
+      "地址清洗改为去括号→清 1 字两条串联，顺序不可颠倒",
+      "动作数 144 → 151；103 条实测凭证 101 / 地址 98，零回退"
     ],
-    "note": "V8.0.2 为免费版本，仅通过小红书「极客ZHANG」提供；本仓库不提供安装包与 iCloud 链接。指令内无任何联网动作。"
+    "note": "V8.0.3 为免费版本，仅通过小红书「极客ZHANG」提供；本仓库不提供安装包与 iCloud 链接。指令内无任何联网动作。"
   },
   "history": [
+    {
+      "version": "8.0.2",
+      "versionCode": 802,
+      "releaseDate": "2026-10-27",
+      "changelog": [
+        "修复配置转义污染（凭证完全匹配不到）",
+        "凭证拆主层/备用层，修尾号混入",
+        "地址去外层括号",
+        "移除地址导航测试功能"
+      ]
+    },
     {
       "version": "8.0.1",
       "versionCode": 801,
